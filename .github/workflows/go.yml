@@ -45,7 +45,7 @@ jobs:
       run: gomobile bind -v -o ./arr/android.aar -androidapi 19 ./cmd
 
     - name: Check Folder Build
-      run: ls -l -a ./aar
+      run: ls -l -a ./arr
       
     - uses: actions/upload-artifact@v3
       with:

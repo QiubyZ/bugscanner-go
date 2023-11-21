@@ -29,4 +29,6 @@ jobs:
 
     - name: Go Binding
       run: go get golang.org/x/mobile/bind
+    - name: Show folder project
+      run: ls -l -a
       

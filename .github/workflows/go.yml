@@ -42,7 +42,7 @@ jobs:
       run: mkdir ./arr 
       
     - name: Build to Android Archive File
-      run: gomobile bind -v -o ./arr/android.aar -androidapi 19 ./cmd
+      run: gomobile bind -v -o ./arr/android.aar -androidapi 25 ./cmd
 
     - name: Check Folder Build
       run: ls -l -a ./arr

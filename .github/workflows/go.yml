@@ -30,6 +30,7 @@ jobs:
 
     - name: Go init
       run: gomobile init
+      
     - name: Tidy
       run: go mod tidy
       
@@ -43,4 +44,9 @@ jobs:
       
     - name: Build to Java Lib
       run: gomobile bind -v -o ./arr/android.aar -androidapi 19 ./cmd
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: AAR File Android
+        path: ./arr/android.aar
       

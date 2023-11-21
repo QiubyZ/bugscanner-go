@@ -42,5 +42,5 @@ jobs:
       run: mkdir ./arr 
       
     - name: Build to Java Lib
-      run: gomobile bind -v -o ./arr/android.aar -androidapi 19 .
+      run: gomobile bind -v -o ./arr/android.aar -androidapi 19 /home/runner/work/bugscanner-go/bugscanner-go
       

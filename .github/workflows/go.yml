@@ -44,6 +44,9 @@ jobs:
     - name: Build to Android Archive File
       run: gomobile bind -v -o ./arr/android.aar -androidapi 19 ./cmd
 
+    - name: Check Folder Build
+      run: ls -l -a ./aar
+      
     - uses: actions/upload-artifact@v3
       with:
         name: BugScannergo (AAR)

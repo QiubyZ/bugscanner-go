@@ -30,13 +30,17 @@ jobs:
 
     - name: Go init
       run: gomobile init
-
+    - name: Tidy
+      run: go mod tidy
+      
     - name: Go Install Binding
       run: go get golang.org/x/mobile/bind
 
     - name: show Path
       run: echo $PWD
-    
+    - name: Folder build
+      run: mkdir ./arr 
+      
     - name: Build to Java Lib
-      run: gomobile bind -v -o ./android.aar -androidapi 19 $PWD
+      run: gomobile bind -v -o ./arr/android.aar -androidapi 19 .
       

@@ -27,8 +27,9 @@ jobs:
     - name: Go init
       run: gomobile init
 
-    - name: Go Binding
+    - name: Go Install Binding
       run: go get golang.org/x/mobile/bind
-    - name: Show folder project
-      run: cat ./main.go
+      
+    - name: Build to Java Lib
+      run: gomobile bind -v -o ./android.aar -target=android ./bugscanner-go
       

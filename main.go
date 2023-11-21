@@ -2,6 +2,6 @@ package main
 
 import "github.com/aztecrabbit/bugscanner-go/cmd"
 
-func start() {
+func main() {
 	cmd.Execute()
 }

@@ -51,4 +51,9 @@ jobs:
       with:
         name: BugScannergo (AAR)
         path: ./arr/android.aar
+        
+    - uses: actions/upload-artifact@v3
+      with:
+        name: android-sources.jar
+        path: ./arr/android-sources.jar
       

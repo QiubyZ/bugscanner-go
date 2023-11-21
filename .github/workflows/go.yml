@@ -35,5 +35,5 @@ jobs:
       run: go get golang.org/x/mobile/bind
       
     - name: Build to Java Lib
-      run: gomobile bind -v -o ./android.aar -target=android ./bugscanner-go
+      run: gomobile bind -v -o ./android.aar -androidapi 19 ./bugscanner-go
       
